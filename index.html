@@ -46,7 +46,7 @@
     document.addEventListener('DOMContentLoaded', async () => {
         const container = document.getElementById('dish-container');
         try {
-            const response = await fetch('http://localhost:8055/items/users'); // Adjust API endpoint
+            const response = await fetch('http://localhost:8055/items/dishes'); // Adjust API endpoint
             const data = await response.json();
 
             console.log('API Response:', data); // Check what the API is returning

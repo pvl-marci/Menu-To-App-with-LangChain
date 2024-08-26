@@ -101,7 +101,7 @@ def update_table(filepath):
 
         # Define the SQL query to insert or update the table
         query = """
-        INSERT INTO Users (dish, description, price)
+        INSERT INTO dishes (dish, description, price)
         VALUES (%s, %s, %s)
         ON CONFLICT (dish) DO UPDATE SET description = EXCLUDED.description, price = EXCLUDED.price;
         """
